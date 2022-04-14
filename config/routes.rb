@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
+      get 'projects/index'
+      get 'projects/show'
+    end
+  end
+  namespace :api do
+    namespace :v1 do
       get 'programmers/index'
       get 'programmers/show'
     end
