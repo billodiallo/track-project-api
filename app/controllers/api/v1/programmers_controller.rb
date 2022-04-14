@@ -4,6 +4,17 @@ class Api::V1::ProgrammersController < ApplicationController
     render json: programmers, status: 200
   end
 
-  def show
+  def create
+    programmer = Programmer.new(
+      name: prog_params[:name],
+      brand: prog_params[:email]
+    )
+    if programmer.save
+      render json: programmer, status: 200
+    else
+      render json: { error: 'Error creating review' }
+    end
   end
+
+  
 end
