@@ -7,7 +7,7 @@ class Api::V1::ProgrammersController < ApplicationController
   def create
     programmer = Programmer.new(
       name: prog_params[:name],
-      brand: prog_params[:email]
+      email: prog_params[:email]
     )
     if programmer.save
       render json: programmer, status: 200
