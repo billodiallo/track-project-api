@@ -1,3 +1,3 @@
 class Project < ApplicationRecord
-    belong_to:programmer
+    belongs_to:programmer
 end
