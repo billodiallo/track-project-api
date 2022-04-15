@@ -1,6 +1,6 @@
 class Api::V1::ProgrammersController < ApplicationController
   def index
-    programmers = programmer.all
+    programmers = Programmer.all
     render json: programmers, status: 200
   end
 
@@ -36,5 +36,3 @@ class Api::V1::ProgrammersController < ApplicationController
   end
 end
 
-
-end
