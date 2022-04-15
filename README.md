@@ -40,7 +40,7 @@ Postgres: >=9.5
 
 ~~~bash
 $ git clone https://github.com/billodiallo/track-project-api.git
-$ cd api3
+$ cd track-project-api.git
 ~~~
 
 Install gems with:
