@@ -5,6 +5,7 @@ class CreateProjects < ActiveRecord::Migration[6.1]
       t.string :startDate
       t.string :deadLineDate
       t.string :budget
+      t.references :programmer, null: false, foreign_key: true
 
       t.timestamps
     end

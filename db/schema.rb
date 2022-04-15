@@ -27,8 +27,11 @@ ActiveRecord::Schema.define(version: 2022_04_14_200925) do
     t.string "startDate"
     t.string "deadLineDate"
     t.string "budget"
+    t.bigint "programmer_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["programmer_id"], name: "index_projects_on_programmer_id"
   end
 
+  add_foreign_key "projects", "programmers"
 end
