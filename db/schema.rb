@@ -10,19 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_18_110905) do
+ActiveRecord::Schema.define(version: 2022_04_18_114306) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "intermediate_tables", force: :cascade do |t|
-    t.bigint "programmers_id", null: false
-    t.bigint "projects_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["programmers_id"], name: "index_intermediate_tables_on_programmers_id"
-    t.index ["projects_id"], name: "index_intermediate_tables_on_projects_id"
-  end
 
   create_table "programmers", force: :cascade do |t|
     t.string "name"
@@ -36,10 +27,22 @@ ActiveRecord::Schema.define(version: 2022_04_18_110905) do
     t.datetime "startDate"
     t.datetime "deadLineDate"
     t.integer "budget"
+    t.bigint "programmer_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["programmer_id"], name: "index_projects_on_programmer_id"
   end
 
-  add_foreign_key "intermediate_tables", "programmers", column: "programmers_id"
-  add_foreign_key "intermediate_tables", "projects", column: "projects_id"
+  create_table "vendors", force: :cascade do |t|
+    t.bigint "programmer_id", null: false
+    t.bigint "project_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["programmer_id"], name: "index_vendors_on_programmer_id"
+    t.index ["project_id"], name: "index_vendors_on_project_id"
+  end
+
+  add_foreign_key "projects", "programmers"
+  add_foreign_key "vendors", "programmers"
+  add_foreign_key "vendors", "projects"
 end

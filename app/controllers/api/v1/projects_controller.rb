@@ -25,20 +25,24 @@ module Api
       end
 
       def destroy
-        project = Project.find(params[:id])
-        project.destroy
-        render json: { status: 'SUCCESS', message: 'Deleted project', data: project }, status: :ok
-      end
+        project = Project.find-by(id: params[:id])
+        programmer = Programmer.find(params[:id])
+        programmer.destroy
+        render json: { status: 'SUCCESS', message: 'Deleted programmer', data: programmer }, status: :ok
+   
+     end
+   
 
-      def update
-        project = Project.find(params[:id])
-        if project.update(project_params)
-          render json: { status: 'SUCCESS', message: 'Updated project', data: project }, status: :ok
-        else
-          render json: { status: 'ERROR', message: 'project not updated', data: project.errors },
-                 status: :unprocessable_entity
-        end
+     def update
+      project = Project.find(params[:id])
+      if project.update(project_params)
+        render json: { status: 'SUCCESS', message: 'Updated project', data: project }, status: :ok
+      else
+        render json: { status: 'ERROR', message: 'Project not updated', data: project.errors },
+               status: :unprocessable_entity
       end
+    end
+
 
       private
 

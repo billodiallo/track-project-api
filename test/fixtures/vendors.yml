@@ -1,9 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  programmers: one
-  projects: one
+  programmer: one
+  project: one
 
 two:
-  programmers: two
-  projects: two
+  programmer: two
+  project: two
