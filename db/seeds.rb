@@ -19,7 +19,7 @@
 Programmer.create([
     {
         name: "paul",
-        email: "agent1@gmail.com"
+        email: "agent1wqwqwq@gmail.com"
        
        
 
@@ -27,19 +27,19 @@ Programmer.create([
 
     {
         name: "Philip",
-        email: "agent2@gmail.com"
+        email: "agent2asdfdsa@gmail.com"
 
     },
 
     {
         name: "John",
-        email: "agent3@gmail.com"
+        email: "rasadacdagent3@gmail.com"
 
     },
 
     {
        name: "henri",
-        email: "agent4@gmail.com"
+        email: "waretirediopaagent4@gmail.com"
 
     }
   
@@ -49,11 +49,11 @@ Programmer.create([
 
 Project.create([
     {
-        title: "E-commerce1",
-        startDate: "2022-04-15",
+        title:"E-commerce1",
+        startDate:"2022-04-15",
         deadLineDate:"2022-04-20",
         budget:22000,
-        programmer_id:1
+        programmer_id:12
        
        
 
@@ -64,7 +64,7 @@ Project.create([
         startDate: "2022-04-15",
         deadLineDate: "2022-04-20",
         budget:22000,
-        programmer_id:2
+        programmer_id:11
     },
 
     {
@@ -72,7 +72,7 @@ Project.create([
         startDate: "2022-04-16",
         deadLineDate: "2022-04-21",
         budget:25000,
-        programmer_id:2
+        programmer_id:11
     },
 
     {
@@ -80,7 +80,7 @@ Project.create([
         startDate: "2022-04-18",
         deadLineDate:"2022-04-27",
         budget:28000,
-        programmer_id:3
+        programmer_id:12
 
     },
 
@@ -89,7 +89,7 @@ Project.create([
         startDate: "2022-04-18",
         deadLineDate:"2022-04-27",
         budget:28000,
-        programmer_id:1
+        programmer_id:12
 
     },
     
@@ -98,7 +98,7 @@ Project.create([
         startDate: "2022-04-18",
         deadLineDate:"2022-04-27",
         budget:28000,
-        programmer_id:2
+        programmer_id:11
 
     },
    
@@ -107,7 +107,7 @@ Project.create([
         startDate: "2022-04-18",
         deadLineDate:"2022-04-27",
         budget:28000,
-        programmer_id:1
+        programmer_id:11
 
     }
 
