@@ -22,11 +22,13 @@ The API will expose the following RESTful endpoints.
 | GET /projects           | Get all projects             |
 | GET /programmers/:id    | Get a specfic programmer     |
 | DELETE /programmers/:id | Delete a programmer          |  
-| POST /projects          | Add a new book               |
+| POST /projects          | Add a new project               |
 | DELETE /projects/:id    | Delete a project             |
 | PUT /projects/:id       | Update a project             |
 
 
+--CHALLENGE REMAINING ---
+DELETE PROGRAMMER FROM PROJECT
 
 To get a local copy up and running follow these simple example steps.
 

@@ -15,102 +15,93 @@
 #                     })
 # end
 
-
 Programmer.create([
-    {
-        name: "paul",
-        email: "agent1wqwqwq@gmail.com"
-       
-       
+                    {
+                      name: 'paul',
+                      email: 'agent1wqwqwq@gmail.com'
 
-    },
+                    },
 
-    {
-        name: "Philip",
-        email: "agent2asdfdsa@gmail.com"
+                    {
+                      name: 'Philip',
+                      email: 'agent2asdfdsa@gmail.com'
 
-    },
+                    },
 
-    {
-        name: "John",
-        email: "rasadacdagent3@gmail.com"
+                    {
+                      name: 'John',
+                      email: 'rasadacdagent3@gmail.com'
 
-    },
+                    },
 
-    {
-       name: "henri",
-        email: "waretirediopaagent4@gmail.com"
+                    {
+                      name: 'henri',
+                      email: 'waretirediopaagent4@gmail.com'
 
-    }
-  
-])
+                    }
 
-
+                  ])
 
 Project.create([
-    {
-        title:"E-commerce1",
-        startDate:"2022-04-15",
-        deadLineDate:"2022-04-20",
-        budget:22000,
-        programmer_id:12
-       
-       
+                 {
+                   title: 'E-commerce1',
+                   startDate: '2022-04-15',
+                   deadLineDate: '2022-04-20',
+                   budget: 22_000,
+                   programmer_id: 12
 
-    },
+                 },
 
-    {
-        title: "E-commerce1",
-        startDate: "2022-04-15",
-        deadLineDate: "2022-04-20",
-        budget:22000,
-        programmer_id:11
-    },
+                 {
+                   title: 'E-commerce1',
+                   startDate: '2022-04-15',
+                   deadLineDate: '2022-04-20',
+                   budget: 22_000,
+                   programmer_id: 11
+                 },
 
-    {
-        title: "E-commerce2",
-        startDate: "2022-04-16",
-        deadLineDate: "2022-04-21",
-        budget:25000,
-        programmer_id:11
-    },
+                 {
+                   title: 'E-commerce2',
+                   startDate: '2022-04-16',
+                   deadLineDate: '2022-04-21',
+                   budget: 25_000,
+                   programmer_id: 11
+                 },
 
-    {
-       title: "E-commerce3",
-        startDate: "2022-04-18",
-        deadLineDate:"2022-04-27",
-        budget:28000,
-        programmer_id:12
+                 {
+                   title: 'E-commerce3',
+                   startDate: '2022-04-18',
+                   deadLineDate: '2022-04-27',
+                   budget: 28_000,
+                   programmer_id: 12
 
-    },
+                 },
 
-    {
-        title: "E-commerce3",
-        startDate: "2022-04-18",
-        deadLineDate:"2022-04-27",
-        budget:28000,
-        programmer_id:12
+                 {
+                   title: 'E-commerce3',
+                   startDate: '2022-04-18',
+                   deadLineDate: '2022-04-27',
+                   budget: 28_000,
+                   programmer_id: 12
 
-    },
-    
-     {
-       title: "E-commerce3",
-        startDate: "2022-04-18",
-        deadLineDate:"2022-04-27",
-        budget:28000,
-        programmer_id:11
+                 },
 
-    },
-   
-    {
-        title: "E-commerce4",
-        startDate: "2022-04-18",
-        deadLineDate:"2022-04-27",
-        budget:28000,
-        programmer_id:11
+                 {
+                   title: 'E-commerce3',
+                   startDate: '2022-04-18',
+                   deadLineDate: '2022-04-27',
+                   budget: 28_000,
+                   programmer_id: 11
 
-    }
+                 },
 
+                 {
+                   title: 'E-commerce4',
+                   startDate: '2022-04-18',
+                   deadLineDate: '2022-04-27',
+                   budget: 28_000,
+                   programmer_id: 11
 
-  
-])
+                 }
+
+               ])
