@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-
-# rubocop:disable Style/Documentation
 class Programmer < ApplicationRecord
   has_many :vendors
   has_many :projects, through: :vendors

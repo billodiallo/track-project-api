@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Api
   module V1
     class ProjectsController < ApplicationController
@@ -25,9 +23,8 @@ module Api
       end
 
       def destroy
-        project = Project.find - by(id: params[:id])
-        programmer = Programmer.find(params[:id])
-        programmer.destroy
+        project = Project.find(params[:id])
+        project.destroy
         render json: { status: 'SUCCESS', message: 'Deleted programmer', data: programmer }, status: :ok
       end
 
