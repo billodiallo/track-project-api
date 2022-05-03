@@ -8,8 +8,6 @@ class CreateProjects < ActiveRecord::Migration[6.1]
       t.datetime :startDate
       t.datetime :deadLineDate
       t.integer :budget
-      t.references :programmer, null: false, foreign_key: true, on_delete: :cascade
-
       t.timestamps
     end
   end

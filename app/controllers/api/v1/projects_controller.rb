@@ -25,7 +25,7 @@ module Api
       def destroy
         project = Project.find(params[:id])
         project.destroy
-        render json: { status: 'SUCCESS', message: 'Deleted programmer', data: programmer }, status: :ok
+        render json: { status: 'SUCCESS', message: 'Deleted project', data: project }, status: :ok
       end
 
       def update
@@ -36,6 +36,14 @@ module Api
           render json: { status: 'ERROR', message: 'Project not updated', data: project.errors },
                  status: :unprocessable_entity
         end
+      end
+
+      def remove_programmer
+        project = Project.find(params[:id])
+        project.programmer_id.destroy
+        render json: { status: 'SUCCESS', message: 'Deleted programmer from project',
+                       data: project.programmer_id[params[:id]] },
+               status: :ok
       end
 
       private
