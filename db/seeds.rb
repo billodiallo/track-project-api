@@ -45,63 +45,82 @@ Programmer.create([
 Project.create([
                  {
                    title: 'E-commerce1',
-                   startDate: '2022-04-15',
-                   deadLineDate: '2022-04-20',
+                   startDate: '2022-05-15',
+                   deadLineDate: '2022-05-20',
                    budget: 22_000,
-                   programmer_id: 12
+                
 
                  },
 
                  {
                    title: 'E-commerce1',
-                   startDate: '2022-04-15',
-                   deadLineDate: '2022-04-20',
+                   startDate: '2022-05-15',
+                   deadLineDate: '2022-05-20',
                    budget: 22_000,
-                   programmer_id: 11
                  },
 
                  {
                    title: 'E-commerce2',
-                   startDate: '2022-04-16',
-                   deadLineDate: '2022-04-21',
+                   startDate: '2022-05-16',
+                   deadLineDate: '2022-05-21',
                    budget: 25_000,
-                   programmer_id: 11
                  },
 
                  {
                    title: 'E-commerce3',
-                   startDate: '2022-04-18',
-                   deadLineDate: '2022-04-27',
+                   startDate: '2022-05-18',
+                   deadLineDate: '2022-05-27',
                    budget: 28_000,
-                   programmer_id: 12
-
-                 },
-
-                 {
-                   title: 'E-commerce3',
-                   startDate: '2022-04-18',
-                   deadLineDate: '2022-04-27',
-                   budget: 28_000,
-                   programmer_id: 12
+                  
 
                  },
 
                  {
                    title: 'E-commerce3',
-                   startDate: '2022-04-18',
-                   deadLineDate: '2022-04-27',
+                   startDate: '2022-05-18',
+                   deadLineDate: '2022-05-27',
                    budget: 28_000,
-                   programmer_id: 11
+                 
+
+                 },
+
+                 {
+                   title: 'E-commerce3',
+                   startDate: '2022-05-18',
+                   deadLineDate: '2022-05-27',
+                   budget: 28_000,
+                   
 
                  },
 
                  {
                    title: 'E-commerce4',
-                   startDate: '2022-04-18',
-                   deadLineDate: '2022-04-27',
+                   startDate: '2022-05-18',
+                   deadLineDate: '2022-05-27',
                    budget: 28_000,
-                   programmer_id: 11
+                  
 
                  }
 
                ])
+
+ Vendor.create([
+                {
+                  project_id: 1,
+                  programmer_id: 1
+              },
+                  {
+                    project_id: 1,
+                    programmer_id: 1},
+
+                    {
+                      project_id: 1,
+                      programmer_id: 2},
+                    
+                      {
+                        project_id: 1,
+                        programmer_id: 3}
+
+                  
+                  ])
+                               
