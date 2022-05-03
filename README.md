@@ -16,19 +16,19 @@ The API will expose the following RESTful endpoints.
 ### BaseUrl: {Host-URL}/api/v1
 
 | Endpoint                       | Functionality                |
-|-------------------------       |------------------------------|
-| GET /api/v1/programmers        | Get all programmers          |
+|--------------------------------|------------------------------|
+| GET    /api/v1/programmers     | Get all programmers          |
 | POST /api/v1/programmers       | Add new programmer           |
 | GET /api/v1/projects           | Get all projects             |
-| GET /api/v1/programmers/:id    | Get a specfic programmer     |
+| GET /api/v1/programmers/:id    | Get a specific programmer    |
 | DELETE /api/v1/programmers/:id | Delete a programmer          |  
 | POST  /api/v1/projects         | Add a new project            |
 | DELETE /api/v1/projects/:id    | Delete a project             |
 | PUT /api/v1/projects/:id       | Update a project             |
 | GET /api/v1/vendors            | Get all assign project       |
 | POST api/v1/vendors            |Assign  programmer to project |
-| DELETE api/v1/vendors/:id      |Remove programmer from project|                           |
-
+| DELETE api/v1/vendors/:id      |Remove programmer from project|
+| GET /api/v1/Vendors/:id        | GET a specific assign project
 
 --CHALLENGE REMAINING ---
 DELETE PROGRAMMER FROM PROJECT
