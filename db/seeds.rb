@@ -48,7 +48,7 @@ Project.create([
                    startDate: '2022-04-15',
                    deadLineDate: '2022-04-20',
                    budget: 22_000,
-                   programmer_id: 12
+                
 
                  },
 
@@ -57,7 +57,6 @@ Project.create([
                    startDate: '2022-04-15',
                    deadLineDate: '2022-04-20',
                    budget: 22_000,
-                   programmer_id: 11
                  },
 
                  {
@@ -65,7 +64,6 @@ Project.create([
                    startDate: '2022-04-16',
                    deadLineDate: '2022-04-21',
                    budget: 25_000,
-                   programmer_id: 11
                  },
 
                  {
@@ -73,16 +71,7 @@ Project.create([
                    startDate: '2022-04-18',
                    deadLineDate: '2022-04-27',
                    budget: 28_000,
-                   programmer_id: 12
-
-                 },
-
-                 {
-                   title: 'E-commerce3',
-                   startDate: '2022-04-18',
-                   deadLineDate: '2022-04-27',
-                   budget: 28_000,
-                   programmer_id: 12
+                  
 
                  },
 
@@ -91,7 +80,16 @@ Project.create([
                    startDate: '2022-04-18',
                    deadLineDate: '2022-04-27',
                    budget: 28_000,
-                   programmer_id: 11
+                 
+
+                 },
+
+                 {
+                   title: 'E-commerce3',
+                   startDate: '2022-04-18',
+                   deadLineDate: '2022-04-27',
+                   budget: 28_000,
+                   
 
                  },
 
@@ -100,7 +98,7 @@ Project.create([
                    startDate: '2022-04-18',
                    deadLineDate: '2022-04-27',
                    budget: 28_000,
-                   programmer_id: 11
+                  
 
                  }
 
