@@ -13,15 +13,15 @@ class Api::V1::VendorsController < ApplicationController
   end
 
   def show
-    programmer_id = params[:programmer_id]
-    project_id = params[:project_id]
+    # programmer_id = params[:programmer_id]
+    # project_id = params[:project_id]
     vendor2 = Vendor.find(params[:id])
     render json: { status: 'SUCCESS', message: 'Loaded assignment', data: vendor2 }, status: :ok
   end
 
   def destroy
-    programmer_id = params[:programmer_id]
-    project_id = params[:project_id]
+    # programmer_id = params[:programmer_id]
+    # project_id = params[:project_id]
     vendor3 = Vendor.find(params[:id])
     vendor3.destroy
     render json: { status: 'SUCCESS', message: 'Removed programmer', data: vendor3 }, status: :ok
